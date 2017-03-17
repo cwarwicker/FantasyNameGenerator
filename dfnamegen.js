@@ -28,10 +28,7 @@ _dfNameGenVars.sources = {};
 					   
 				// Build the string
 				var str = format.replace(/\$(\d+|[a-z]+)/g, function(match, capture){
-					   
-						console.log(source.names);
-						console.log(capture);
-					
+					   					
 					var arr = source.names[capture];
 					var el = arr[Math.floor(Math.random()*arr.length)];
 					
