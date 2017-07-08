@@ -16,7 +16,7 @@ _dfNameGenVars.sources = {};
 		var el = this;
 		var results = [];
 		var last = '';
-                
+                                
 		var generate = function(source){
 
 			// Generator
@@ -43,7 +43,7 @@ _dfNameGenVars.sources = {};
 					   
 				});
                                 
-                // Capitalise first letter of each word
+                                // Capitalise first letter of each word
 				var arr = str.split(" ");
 				$(arr).each( function(k, i){
 					arr[k] = arr[k].charAt(0).toUpperCase() + arr[k].slice(1).toLowerCase();

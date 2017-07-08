@@ -3,15 +3,18 @@
 
 <button onclick="demo_gen('fantasy_land');">Fantasy Land</button>
 <button onclick="demo_gen('fantasy_place');">Fantasy Place</button>
+<button onclick="demo_gen('real_character_name');">Character Name</button>
 
 
 <div id="demo"></div>
  
+
  
  <script>
  function demo_gen(type){
  
-	$('#demo').dfNameGen('http://localhost/namegen/sources/'+type+'.json', {"limit": 20});
+        $('#demo').html('<img src="loading.svg" />');
+	$('#demo').dfNameGen('http://localhost/FantasyNameGenerator/sources/'+type+'.json', {"limit": 20});
  
  }
  </script>
